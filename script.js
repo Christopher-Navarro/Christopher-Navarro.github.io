@@ -68,6 +68,7 @@ function createDivsForColors(colorArray) {
   }
 }
 const moveElement = document.getElementById("moves");
+moveElement.innerText = lowScore;
 const scoreElement = document.getElementById("score");
 
   // TODO: Implement this function!
@@ -117,7 +118,6 @@ function handleCardClick(event) {
   let lowScore = +localStorage.getItem("low-score") || Infinity;
   if (score > lowScore) {
     localStorage.setItem("low-score", score);
-    moveElement.innerText = lowScore;
   }
 
 
