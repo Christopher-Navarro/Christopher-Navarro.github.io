@@ -121,7 +121,7 @@ function handleCardClick(event) {
     }
   }
 
-if (score < lowScore){
+if (score < lowScore || Infinity){
 localStorage.setItem("low-score", score);
 };
   
