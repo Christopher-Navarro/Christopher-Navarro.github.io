@@ -5,6 +5,12 @@ let flipped = 0;
 let notClicked = false;
 let score = 0;
 let lowScore = localStorage.getItem("low-score");
+const startButton = document.getElementById('start');
+const content = document.getElementById('content');
+
+startButton.addEventListener('click', () => {
+  content.style.display = 'block';
+});
 
 
 const COLORS = [
