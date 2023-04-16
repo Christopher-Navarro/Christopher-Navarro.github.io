@@ -121,10 +121,10 @@ function handleCardClick(event) {
     }
   }
 
-  let lowScore = +localStorage.getItem("low-score") || Infinity;
-  if (score > lowScore) {
-    localStorage.setItem("low-score", score);
-  }
+if (score < lowScore){
+localStorage.setItem("low-score", score);
+};
+  
 
 
   if (flipped === COLORS.length) alert("GAME OVER!");
